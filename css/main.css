@@ -1,0 +1,122 @@
+body {
+	background-color: #7EB6FF;
+	margin-bottom: 10px;
+}
+
+@font-face {
+	font-family: 'Pokemon';
+	src: url('../fonts/Pokemon GB.ttf');
+}
+
+@font-face {
+	font-family: 'Pokemon Header';
+	src: url('../fonts/Pokemon Solid.ttf');
+}
+
+@font-face {
+	font-family: 'Pokemon Header - Hollow';
+	src: url('../fonts/Pokemon Hollow.ttf');
+}
+
+.canvasContainer {
+	height: 255px;
+}
+
+.disclaimer {
+	font-family: 'Pokemon';
+	font-size: .5em;
+	margin-top: 10px;
+}
+
+.header {
+	font-family: 'Pokemon Header';
+	color: #FFFF00;
+	font-size: 2.5em;
+	padding-top: 20px;
+	line-height: 1.25em;
+	text-shadow:
+    	-1px -1px 0 #000,
+    	1px -1px 0 #000,
+    	-1px 1px 0 #000,
+    	1px 1px 0 #000; 
+}
+
+.loading-title {
+	font-family: 'Pokemon Header - Hollow';
+	color: #000000;
+	font-size: 2.0em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	letter-spacing: 2px;
+	line-height: 1.25em;
+}
+
+.modal-body {
+	max-height: 300px;
+}
+
+.modal-body img {
+	border: 2px solid rgba(0,0,0,0.0);
+	padding: 2px;
+}
+
+.modal-body img.selected {
+	border: 2px solid #63b8ff;
+}
+
+.module {
+	border: 1px solid #1F80FF;
+	border-radius: 6px;
+	background-color: #FFFFFF;
+	padding: 5px;
+	margin-top: 10px;
+	box-shadow: 2px 2px .5px .5px #0058CC;
+	-moz-box-shadow: 2px 2px .5px .5px #0058CC;
+	-webkit-box-shadow: 2px 2px .5px .5px #0058CC;
+}
+
+.module .module-header {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.progress {
+	margin-top: 10px;
+}
+
+
+.selectContainer {
+	margin-bottom: 10px;
+}
+
+.selectionHolder.sceneHolder {
+	width: 200px;
+	height: 112px;
+}
+
+.selectionHolder.textBox, .selectionHolder.background{
+	width: 200px;
+	height: 38px;
+}
+
+.selectionHolder {
+	cursor: pointer;
+}
+
+.selectionHolder {
+	border: 1px solid #000;
+	height: 125px;
+	width: 100px;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	background-color: #778899;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slider-selection {
+	background: #7Eb6FF;
+}
