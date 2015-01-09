@@ -15,7 +15,7 @@
 		?>
 	</head>
 	<body>
-		<?php include_once("analytics.php") ?>
+		<?php include_once("analyticstracking.php") ?>
 		<div class="container">
 			<div class="row-fluid">
 				<div class="header text-center">
