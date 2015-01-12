@@ -150,11 +150,6 @@ $(document).ready(function() {
 	$('.modal-footer .btn[data-action="close"]').click(function() {
 		var value = $(this).closest('.selectContainer').find('select').attr('data-value');//.find('.imageContainer').attr('data-value');
 		$(this).closest('.modal').find('.modal-body').find('img[src="' + options[value] + '"]').click();
-	});	
-
-	$('.modal-footer .btn[data-action="reset"]').click(function() {
-		$(this).closest('.modal').find('.modal-body').find('img').removeClass('selected');
-		$(this).closest('.modal-footer').find('.btn-primary').click();
 	});
 
 	$('.pkmnSelect').change(function() {
@@ -189,7 +184,7 @@ $(document).ready(function() {
 
 	function preLoad() {
 		var loadProgress = $.Deferred();
-		var $loadingBar = $('.loadingContainer .progress .bar');
+		var $loadingBar = $('.loadingContainer .progress .progress-bar');
 		loadProgress.progress(function(pct) {
 			$loadingBar.css('width', pct);
 		});

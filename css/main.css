@@ -97,9 +97,19 @@ body {
 	height: 112px;
 }
 
+.selectionHolder.sceneHolder img {
+	width: 198px;
+	height: 110px;
+}
+
 .selectionHolder.textBox, .selectionHolder.background{
 	width: 200px;
 	height: 38px;
+}
+
+.selectionHolder.textBox img{
+	width: 198px;
+	height: 36px;
 }
 
 .selectionHolder {
