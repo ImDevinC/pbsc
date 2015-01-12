@@ -164,9 +164,7 @@ $(document).ready(function() {
 		$(this).closest('.selectContainer').find('.btn[data-toggle="modal"]').click();
 	});
 
-	$('.slider').slider().on('slide', function(ev) {
-		$('.btn[data-action="create"]').click();
-	});
+	
 
 	function colorToHex(color) {
 	    if (color.substr(0, 1) === '#') {
@@ -200,8 +198,11 @@ $(document).ready(function() {
 					$(this).closest('.modal-body').find('.pkmnSelect').val($(this).attr('src'));
 				}
 			});
-		 	$('.contentContainer').show();
-		})
+		 	$('.contentContainer').removeClass('hidden');
+		 	$('.slider').slider().on('slide', function(ev) {
+				$('.btn[data-action="create"]').click();
+			});
+		});
 		$loadingBar.css('width', '0%');
 		var $options = $('select option');
 		var total = $options.length;

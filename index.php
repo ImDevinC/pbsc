@@ -38,7 +38,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="contentContainer" style="display:none">
+			<div class="contentContainer hidden">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="module">
@@ -59,7 +59,6 @@
 														<img />
 													</div>
 													<div class="row">
-														<!--<span class="fa fa-unlock" aria-hidden="true"></span>-->
 														<button class="btn btn-default" data-toggle="modal">Trainer</button>
 													</div>
 													<div class="modal fade" style="display:none">
@@ -85,7 +84,6 @@
 														<img />
 													</div>
 													<div class="row">
-														<!--<span class="fa fa-unlock" aria-hidden="true"></span>-->
 														<button class="btn btn-default" data-toggle="modal">Pokemon</button>
 													</div>
 													<div class="modal fade" style="display:none">
@@ -155,7 +153,7 @@
 															<img />
 														</div>
 														<div class="row">
-															<!--<span class="fa fa-unlock" aria-hidden="true"></span>-->
+															
 															<button class="btn btn-default" data-toggle="modal">Trainer</button>
 														</div>
 														<div class="modal fade" style="display:none">
@@ -181,7 +179,7 @@
 															<img />
 														</div>
 														<div class="row">
-															<!--<span class="fa fa-unlock" aria-hidden="true"></span>-->
+															
 															<button class="btn btn-default" data-toggle="modal">Pokemon</button>
 														</div>
 														<div class="modal fade" style="display:none">
@@ -220,77 +218,73 @@
 									<div class="row text-center">
 										<div class="col-md-12">
 											<div class="row text-center">
-												<div class="row">
-													<div class="col-md-12 selectContainer">
-														<select class="hide" data-value="scene" data-display="scenes">
-															<?php
-																echo loadFiles('./img/Scenes/');
-															?>
-														</select>
-														<div class="row selectionHolder sceneHolder">
-															<img />
-														</div>
-														<!--<span class="fa fa-unlock" aria-hidden="true"></span>-->
-														<button class="btn btn-default" data-toggle="modal">Scene</button>
-														<div class="modal fade" style="display:none">
-															<div class="modal-dialog">
-																<div class="modal-content">
-																	<div class="modal-header">
-																		<button type="button" class="close" data-dismiss="modal">&times;</button>
-																		<h3>Choose a Scene</h3>
-																	</div>
-																	<div class="modal-body">
-																		<div class="row imageContainer" data-value="scene"></div>
-																	</div>
-																	<div class="modal-footer">
-																		<button class="btn btn-danger" data-dismiss="modal" data-action="close">Close</button>
-																		<button class="btn btn-primary" data-dismiss="modal">Save</button>
-																	</div>
+												<div class="col-md-12 selectContainer">
+													<select class="hide" data-value="scene" data-display="scenes">
+														<?php
+															echo loadFiles('./img/Scenes/');
+														?>
+													</select>
+													<div class="row selectionHolder sceneHolder">
+														<img />
+													</div>
+													
+													<button class="btn btn-default" data-toggle="modal">Scene</button>
+													<div class="modal fade" style="display:none">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal">&times;</button>
+																	<h3>Choose a Scene</h3>
+																</div>
+																<div class="modal-body">
+																	<div class="row imageContainer" data-value="scene"></div>
+																</div>
+																<div class="modal-footer">
+																	<button class="btn btn-danger" data-dismiss="modal" data-action="close">Close</button>
+																	<button class="btn btn-primary" data-dismiss="modal">Save</button>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-												<div class="row">
-													<div class="col-md-12 selectContainer">
-														<select class="hide" data-value="textbox" data-display="textbox display">
-															<?php
-																echo loadFiles('./img/UI/Text Box/');
-															?>
-														</select>
-														<div class="row selectionHolder textBox">
-															<img />
-														</div>
-														<!--<span class="fa fa-unlock" aria-hidden="true"></span>-->
-														<button class="btn btn-default" data-toggle="modal">Textbox</button>
-														<div class="modal fade" style="display:none">
-															<div class="modal-dialog">
-																<div class="modal-content">
-																	<div class="modal-header">
-																		<button type="button" class="close" data-dismiss="modal">&times;</button>
-																		<h3>Choose a Scene</h3>
-																	</div>
-																	<div class="modal-body">
-																		<div class="row imageContainer" data-value="textbox"></div>
-																	</div>
-																	<div class="modal-footer">
-																		<button class="btn btn-danger" data-dismiss="modal" data-action="close">Close</button>
-																		<button class="btn btn-primary" data-dismiss="modal">Save</button>
-																	</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 selectContainer">
+													<select class="hide" data-value="textbox" data-display="textbox display">
+														<?php
+															echo loadFiles('./img/UI/Text Box/');
+														?>
+													</select>
+													<div class="row selectionHolder textBox">
+														<img />
+													</div>
+													
+													<button class="btn btn-default" data-toggle="modal">Textbox</button>
+													<div class="modal fade" style="display:none">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal">&times;</button>
+																	<h3>Choose a Scene</h3>
+																</div>
+																<div class="modal-body">
+																	<div class="row imageContainer" data-value="textbox"></div>
+																</div>
+																<div class="modal-footer">
+																	<button class="btn btn-danger" data-dismiss="modal" data-action="close">Close</button>
+																	<button class="btn btn-primary" data-dismiss="modal">Save</button>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-												<div class="row">
-													<div class="col-md-12 selectContainer">
-														<div class="row selectionHolder background">
-															<img />
-														</div>
-														<!--<span class="fa fa-unlock" aria-hidden="true"></span>-->
-														<button class="btn btn-default colorpicker" id="cp" data-color-format="hex" data-color="rgb(255,255,255)" data-value="bgcolor">Background Color</button>
-														</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 selectContainer">
+													<div class="row selectionHolder background">
+														<img />
 													</div>
+													<button class="btn btn-default colorpicker" id="cp" data-color-format="hex" data-color="rgb(255,255,255)" data-value="bgcolor">Background Color</button>
 												</div>
 											</div>
 										</div>
@@ -299,79 +293,79 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-4">
-							<div class-"row">
-								<div class="col-md-12">
-									<div class="module text-center">
-										<div class="module-header">
-											Player Position
-										</div>
-										<div class="module-body">
-											<div class="control-group">
-												<div class="controls">
-													<input id="playerPokemonVertical" class="slider" data-slider-min="-15" data-slider-max="15"
-													data-slider-step="1" data-slider-value="1" value="1" data-slider-tooltip="hide"
-													data-slider-orientation="vertical" data-slider-selection="after">
-												</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="module text-center">
+									<div class="module-header">
+										Player Position
+									</div>
+									<div class="module-body">
+										<div class="control-group">
+											<div class="controls">
+												<input id="playerPokemonVertical" class="slider" data-slider-min="-15" data-slider-max="15"
+												data-slider-step="1" data-slider-value="1" value="1" data-slider-tooltip="hide"
+												data-slider-orientation="vertical" data-slider-selection="after">
 											</div>
-											<div class="control-group">
-												<div class="controls">
-													<input id="playerPokemonHorizontal" class="slider" data-slider-min="-20" data-slider-max="20"
-													data-slider-step="1" data-slider-value="1" value="1" data-slider-tooltip="hide"
-													data-slider-selection="before">
-												</div>
+										</div>
+										<div class="control-group">
+											<div class="controls">
+												<input id="playerPokemonHorizontal" class="slider" data-slider-min="-20" data-slider-max="20"
+												data-slider-step="1" data-slider-value="1" value="1" data-slider-tooltip="hide"
+												data-slider-selection="before">
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="module">
-										<div class="row text-center">
-											<button type="button" class="btn btn-primary" data-action="create">Create</button>
-											<button type="button" class="btn btn-warning" data-action="random">Randomize</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<div class="module">
-										<div class="row text-center canvasContainer">
-											<canvas id="sceneCanvas" width="255" height="255" style="display: none;"></canvas>
-											<a download="pokemon.png">
-												<img id="canvasHolder" />
-											</a>
-										</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="module">
+									<div class="row text-center">
+										<button type="button" class="btn btn-primary" data-action="create">Create</button>
+										<button type="button" class="btn btn-warning" data-action="random">Randomize</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="module text-center">
-										<div class="module-header">
-											Challenger Position
-										</div>
-										<div class="module-body">
-											<div class="control-group">
-												<div class="controls">
-													<input id="challengerPokemonVertical" class="slider" data-slider-min="-15" data-slider-max="15"
-													data-slider-step="1" data-slider-value="1" value="1" data-slider-tooltip="hide"
-													data-slider-orientation="vertical" data-slider-selection="after">
-												</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="module">
+									<div class="row text-center canvasContainer">
+										<canvas id="sceneCanvas" width="255" height="255" style="display: none;"></canvas>
+										<a download="pokemon.png">
+											<img id="canvasHolder" />
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="module text-center">
+									<div class="module-header">
+										Challenger Position
+									</div>
+									<div class="module-body">
+										<div class="control-group">
+											<div class="controls">
+												<input id="challengerPokemonVertical" class="slider" data-slider-min="-15" data-slider-max="15"
+												data-slider-step="1" data-slider-value="1" value="1" data-slider-tooltip="hide"
+												data-slider-orientation="vertical" data-slider-selection="after">
 											</div>
-											<div class="control-group">
-												<div class="controls">
-													<input id="challengerPokemonHorizontal" class="slider" data-slider-min="-20" data-slider-max="20"
-													data-slider-step="1" data-slider-value="1" value="1" data-slider-tooltip="hide"
-													data-slider-selection="before">
-												</div>
+										</div>
+										<div class="control-group">
+											<div class="controls">
+												<input id="challengerPokemonHorizontal" class="slider" data-slider-min="-20" data-slider-max="20"
+												data-slider-step="1" data-slider-value="1" value="1" data-slider-tooltip="hide"
+												data-slider-orientation="horizontal" data-slider-selection="before">
 											</div>
 										</div>
 									</div>
