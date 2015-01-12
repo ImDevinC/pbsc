@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Pokemon Scene Creator</title>
+		<title>Pokemon Battle Scene Creator</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -15,7 +15,7 @@
 		?>
 	</head>
 	<body>
-		<?php //include_once("analyticstracking.php") ?>
+		<?php include_once("analyticstracking.php") ?>
 		<div class="container">
 			<div class="row">
 				<div class="header text-center">
