@@ -53,6 +53,7 @@ body {
 
 .modal-body {
 	max-height: 300px;
+	overflow-y: scroll;
 }
 
 .modal-body img {
@@ -81,6 +82,12 @@ body {
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 10px;
+}
+
+select.pkmnSelect {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
 
 .progress {

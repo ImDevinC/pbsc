@@ -95,7 +95,7 @@
 																</div>
 																<div class="modal-body">
 																	<div class="row text-center">
-																		<select class="pkmnSelect" data-value="playerPkmn"  data-display="Pokemon backs">
+																		<select class="pkmnSelect form-control" data-value="playerPkmn" data-display="Pokemon backs">
 																			<option value="-1">None</option>
 																			<?php
 																				echo loadFiles('./img/Pokemon/Back/');
@@ -153,7 +153,6 @@
 															<img />
 														</div>
 														<div class="row">
-															
 															<button class="btn btn-default" data-toggle="modal">Trainer</button>
 														</div>
 														<div class="modal fade" style="display:none">
@@ -164,7 +163,7 @@
 																		<h3>Choose a Trainer</h3>
 																	</div>
 																	<div class="modal-body">
-																		<div class="row imageContainer" data-value="challenger"></div>
+																			<div class="imageContainer" data-value="challenger"></div>
 																	</div>
 																	<div class="modal-footer">
 																			<button class="btn btn-danger" data-dismiss="modal" data-action="close">Close</button>
@@ -191,7 +190,7 @@
 																	</div>
 																	<div class="modal-body">
 																		<div class="row text-center">
-																			<select class="pkmnSelect" data-value="challengerPkmn" data-display="Pokemon fronts">
+																			<select class="pkmnSelect form-control" data-value="challengerPkmn" data-display="Pokemon fronts">
 																				<option value="-1">None</option>
 																				<?php
 																					echo loadFiles('./img/Pokemon/Front/');
